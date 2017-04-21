@@ -24,11 +24,10 @@ e1. Open crash 1 in WinDbg
           ~* kb
           .loadby sos clr
           !clrstack
-
-!dso
+          !dso
           !do <exception>
           !objsize <exception>
-T          click <message>
+          !click <message>
           !gcroot <message>
           lm
           !eeheap -gc
