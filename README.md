@@ -22,17 +22,17 @@ Use magnifier with bar to manify command in windbg
 2. Add commands to scratchpad
 3. Walk through commands and explain what we can find in a memory dump
 
-~* kb
-.loadby sos clr
-!clrstack
-!dso
-!do <exception>
-!objsize <exception>
-click <message>
-!gcroot <message>
-lm
-!eeheap -gc
-!dumpheap -stat
+          ~* kb
+          .loadby sos clr
+          !clrstack
+          !dso
+          !do <exception>
+          !objsize <exception>
+          click <message>
+          !gcroot <message>
+          lm
+          !eeheap -gc
+          !dumpheap -stat
 
 ## Crash 1
 1. Repro crash in presidents - next on Obama
