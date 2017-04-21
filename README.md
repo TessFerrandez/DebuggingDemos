@@ -6,7 +6,6 @@ Demos for .NET Debugging Presentations
 2. Install [ProcDump](https://technet.microsoft.com/en-us/sysinternals/dd996900.aspx)
 3. Install [WinDbg](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063(v=VS.85).aspx) 
 4. Download and compile [Netling](https://github.com/hallatore/Netling) easy load tester 
-
 Use magnifier with bar to manify command in windbg
 
 ### Capture demo dumps
@@ -25,7 +24,8 @@ e1. Open crash 1 in WinDbg
           ~* kb
           .loadby sos clr
           !clrstack
-          !dso
+
+!dso
           !do <exception>
           !objsize <exception>
 T          click <message>
@@ -77,6 +77,7 @@ T          click <message>
 - newscontroller root down
 6. Open in Debug Diag
 - see cache
+
 (*) open in Windbg and debug with !gcroot etc.
 
 Slides at http://www.slideshare.net/TessFerrandez
