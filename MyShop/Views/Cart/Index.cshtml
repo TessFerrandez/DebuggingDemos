@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MyShop.Models.Product>
+
+<h2>Shopping Cart.</h2>
+<p>
+    <h4>Cool stuff for cool people</h4>
+    <br />
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+<p>
+    <strong>@Html.ActionLink("Order", "Order", "Cart")</strong>
+</p>

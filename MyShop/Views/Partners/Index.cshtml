@@ -1,0 +1,10 @@
+﻿@model IEnumerable<MyShop.Models.Partner>
+<h2>Our Partners</h2>
+<dl>
+    @foreach(var item in Model)
+    {
+        <dd>
+            <a href="@item.Url">@item.DisplayName</a>
+        </dd>
+    }
+</dl>
