@@ -1,0 +1,42 @@
+Windbg walkthrough (dump = crash1)
+==================
+~* k
+
+.loadby sos clr
+!clrstack
+~* e !clrstack
+!dumpstackobjects
+
+!dumpobj 034092fc
+!objsize 034092fc
+!gcroot 0361d32c
+
+lm
+
+!eeheap -gc
+!dumpheap -stat
+
+!help
+
+
+Memory walkthrough 
+===================
+.prefer_dml 0
+
+!dumpheap -stat
+
+(NewsController)
+!dumpheap -mt 00007fff652b5870 
+!gcroot 000001dff7925ec8
+
+(CacheItemRemovedCallback)
+!do 000001dff79287f0
+
+!dumpmt -md 00007fff652b5870 
+
+!dumpheap -type HttpRuntime
+!objsize 000001ddf020bbc8 
+
+!eeheap -gc
+!dumpheap 000001dff0201000 000001dff0202000
+!dumpheap -type System.String -min 1000
