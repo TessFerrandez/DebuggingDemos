@@ -17,7 +17,7 @@ Use magnifier with bar to manify command in windbg
 # Script
 
 ## Dump walkthrough
-e1. Open crash 1 in WinDbg
+1. Open crash 1 in WinDbg
 2. Add commands to scratchpad
 3. Walk through commands and explain what we can find in a memory dump
 
