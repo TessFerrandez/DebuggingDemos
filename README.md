@@ -18,7 +18,7 @@ Use magnifier with bar to manify command in windbg
 # Script
 
 ## Dump walkthrough
-1. Open crash 1 in WinDbg
+e1. Open crash 1 in WinDbg
 2. Add commands to scratchpad
 3. Walk through commands and explain what we can find in a memory dump
 
@@ -28,7 +28,7 @@ Use magnifier with bar to manify command in windbg
           !dso
           !do <exception>
           !objsize <exception>
-          click <message>
+T          click <message>
           !gcroot <message>
           lm
           !eeheap -gc
@@ -48,3 +48,35 @@ Use magnifier with bar to manify command in windbg
 
 (*) debug diag rules 
 
+## Hang 1
+1. Browse to Products (MyShop)
+2. Netling 8/10/1 + task manager (check CPU)
+3. Netling again - dump with task manager
+(*) Windbg - show lots of same stacks
+4. Debug Diag 
+- show wait
+- http context report
+5. Visual studio (Mixed??)
+- Parallel stacks
+
+## Hang 2
+1. Open presidents, show slowness on next
+2. Analyze/Performance Profiler
+- Performance wizard
+- Instrumentation
+3. Repro / Stop profiling
+4. Summary - App.Run - move down path
+
+## Memory 1
+1. Browse news
+2. dump for comparison
+3. Netling 4/10/1 
+4. Dump leak
+5. Open in VS
+- sort by size diff bytes
+- newscontroller root down
+6. Open in Debug Diag
+- see cache
+(*) open in Windbg and debug with !gcroot etc.
+
+Slides at http://www.slideshare.net/TessFerrandez
