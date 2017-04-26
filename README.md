@@ -6,7 +6,7 @@ Demos for .NET Debugging Presentations
 2. Install [ProcDump](https://technet.microsoft.com/en-us/sysinternals/dd996900.aspx)
 3. Install [WinDbg](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063(v=VS.85).aspx) 
 4. Download and compile [Netling](https://github.com/hallatore/Netling) easy load tester 
-5. In WinDbg, Set the sympath to srv * c:\symcache * https://msdl.microsoft.com/download/symbols and save workspace
+5. In WinDbg, Set the sympath to srv\*c:\symcache\*https://msdl.microsoft.com/download/symbols and save workspace 
 
 Use magnifier with bar to manify command in windbg
 
