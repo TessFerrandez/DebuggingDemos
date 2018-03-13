@@ -81,4 +81,4 @@ Use magnifier with bar to manify command in windbg
 
 (*) open in Windbg and debug with !gcroot etc.
 
-Slides at http://www.slideshare.net/TessFerrandez
+Slides available on my [Slideshare](http://www.slideshare.net/TessFerrandez)
