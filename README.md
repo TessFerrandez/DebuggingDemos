@@ -1,6 +1,8 @@
 # DebuggingDemos
 Demos for .NET Debugging Presentations
 
+If you came here looking for debugging info or labs, check out my blog [https://tessferrandez.github.io](https://tessferrandez.github.io)
+
 ## Preparations
 1. Install [DebugDiag](https://www.microsoft.com/en-us/download/details.aspx?id=49924)
 2. Install [ProcDump](https://technet.microsoft.com/en-us/sysinternals/dd996900.aspx)
